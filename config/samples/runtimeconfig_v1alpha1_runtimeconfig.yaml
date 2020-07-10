@@ -1,0 +1,7 @@
+apiVersion: runtimeconfig.runtimeconfiguration.openshift.io/v1alpha1
+kind: RuntimeConfig
+metadata:
+  name: runtimeconfig-sample
+spec:
+  # Add fields here
+  foo: bar

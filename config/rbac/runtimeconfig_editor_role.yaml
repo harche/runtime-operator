@@ -1,0 +1,24 @@
+# permissions for end users to edit runtimeconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: runtimeconfig-editor-role
+rules:
+- apiGroups:
+  - runtimeconfig.runtimeconfiguration.openshift.io
+  resources:
+  - runtimeconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - runtimeconfig.runtimeconfiguration.openshift.io
+  resources:
+  - runtimeconfigs/status
+  verbs:
+  - get

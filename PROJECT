@@ -1,0 +1,10 @@
+domain: runtimeconfiguration.openshift.io
+layout: go.kubebuilder.io/v2
+repo: github.com/harche/runtime-operator
+resources:
+- group: runtimeconfig
+  kind: RuntimeConfig
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  go.operator-sdk.io/v2-alpha: {}
